@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SportNow.App">
+    <Application.Resources>
+        <Style TargetType="Entry">
+            <Setter Property="FontFamily" Value="futuracondensedmedium" />
+            <Setter Property="FontSize" Value="20" />
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="futuracondensedmedium" />
+            <Setter Property="FontSize" Value="20" />
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="futuracondensedmedium" />
+            <Setter Property="FontSize" Value="20" />
+        </Style>
+        <Style TargetType="Grid">
+            <Setter Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal" />
+                        <VisualState x:Name="Selected">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor"
+                                        Value="#ffffff" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+        <Style TargetType="RelativeLayout">
+            <Setter Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal" />
+                        <VisualState x:Name="Selected">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor"
+                                        Value="#ffffff" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,75 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <ReleaseVersion>1.0.1</ReleaseVersion>
+    <BuildWithMSBuildOnMono>true</BuildWithMSBuildOnMono>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2612" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.8.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Plugin.FirebasePushNotification" Version="3.4.35" />
+    <PackageReference Include="Syncfusion.Xamarin.SfChart" Version="22.2.11" />
+    <PackageReference Include="Xamarin.CommunityToolkit" Version="2.0.6" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="Plugin.DeviceOrientation" Version="1.0.7" />
+    <PackageReference Include="SkiaSharp.Views.Forms" Version="2.88.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\Data\" />
+    <Folder Include="Services\" />
+    <Folder Include="Views\" />
+    <Folder Include="Model\" />
+    <Folder Include="Resourses\" />
+    <Folder Include="Custom Views\" />
+    <Folder Include="Views\Competition\" />
+    <Folder Include="Views\Grade\" />
+    <Folder Include="Views\Fee\" />
+    <Folder Include="Views\Event\" />
+    <Folder Include="Views\Do\" />
+    <Folder Include="Model\Charts\" />
+    <Folder Include="Views\ExaminationSession\" />
+    <Folder Include="Views\Equipment\" />
+    <Folder Include="Views\Attendance\" />
+    <Folder Include="ViewModel\" />
+    <Folder Include="Views\ExaminationSession\ExaminationEvaluation\" />
+    <Folder Include="Views\MonthFee\" />
+    <Folder Include="Views\Invoice\" />
+    <Folder Include="Views\Profile\" />
+    <Folder Include="Services\Camera\" />
+    <Folder Include="Views\CompleteRegistration\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Views\Attendance\EquipamentTypePageCS.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Resourses\futura medium condensed bt.ttf" />
+    <None Remove="Views\ExaminationSession\ExaminationEvaluation\" />
+    <None Remove="Plugin.DeviceOrientation" />
+    <None Remove="Views\MonthFee\" />
+    <None Remove="Views\Invoice\" />
+    <None Remove="Views\Profile\" />
+    <None Remove="Services\Camera\" />
+    <None Remove="Syncfusion.Xamarin.SfImageEditor" />
+    <None Remove="Syncfusion.Xamarin.SfMaskedEdit" />
+    <None Remove="Views\CompleteRegistration\" />
+    <None Remove="Syncfusion.Xamarin.SfBusyIndicator" />
+    <None Remove="SkiaSharp.Views.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resourses\futura medium condensed bt.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android">
+      <HintPath>..\..\..\..\..\Library\Frameworks\Xamarin.Android.framework\Versions\11.1.0.26\lib\xamarin.android\xbuild-frameworks\MonoAndroid\v10.0\Mono.Android.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
