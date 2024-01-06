@@ -245,7 +245,7 @@ namespace SportNow.Views.CompleteRegistration
 
 					showActivityIndicator();
 
-					App.member.n_familiares = familiaresPicker.SelectedIndex.ToString();
+					App.member.n_familiares = (familiaresPicker.SelectedIndex-1).ToString();
 					var result = await memberManager.UpdateMemberInfo(App.original_member.id, App.member);
 					if (result == "-1")
 					{

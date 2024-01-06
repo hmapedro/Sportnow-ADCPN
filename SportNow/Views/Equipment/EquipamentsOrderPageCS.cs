@@ -155,7 +155,7 @@ namespace SportNow.Views
 				}));
 
 
-			/*Label orderdescLabel = new Label { BackgroundColor = Color.Transparent, VerticalTextAlignment = TextAlignment.Center, HorizontalTextAlignment = TextAlignment.Start, FontSize = App.itemTextFontSize, TextColor = App.normalTextColor, LineBreakMode = LineBreakMode.WordWrap };
+			Label orderdescLabel = new Label { BackgroundColor = Color.Transparent, VerticalTextAlignment = TextAlignment.Center, HorizontalTextAlignment = TextAlignment.Start, FontSize = App.itemTextFontSize, TextColor = App.normalTextColor, LineBreakMode = LineBreakMode.WordWrap };
 			orderdescLabel.Text = "Ao solicitar este equipamento iremos efetuar uma validação do Stock disponível e o responsável da sua Escola irá levar-lhe a sua encomenda com a maior brevidade possível.";
 
 			relativeLayout.Children.Add(orderdescLabel,
@@ -168,7 +168,7 @@ namespace SportNow.Views
 				heightConstraint: Constraint.RelativeToParent((parent) =>
 				{
 					return 80 * App.screenHeightAdapter; // 
-			}));*/
+			}));
 
 
 		}
@@ -203,9 +203,9 @@ namespace SportNow.Views
 
             EquipmentOrder equipmentOrder = await equipmentManager.GetEquipment_Order_byID(result);
 
-            await Navigation.PushAsync(new EquipamentOrderPaymentPageCS(equipmentOrder));
+            //await Navigation.PushAsync(new EquipamentOrderPaymentPageCS(equipmentOrder));
 
-            //await DisplayAlert("EQUIPAMENTO SOLICITADO", "A sua encomenda foi realizada com sucesso. Fale com o seu treinador para saber quando conseguirá entregar a mesma.", "OK");
+            await DisplayAlert("EQUIPAMENTO SOLICITADO", "A sua encomenda foi realizada com sucesso. Fale com o seu treinador para saber quando conseguirá entregar a mesma.", "OK");
 
 		}
 	}
